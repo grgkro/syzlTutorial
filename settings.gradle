@@ -1,0 +1,2 @@
+rootProject.name = "syzltTut"
+include ':app'

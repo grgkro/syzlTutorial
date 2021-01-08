@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/authentication_graph"
+    app:startDestination="@id/signUpFragment">
+
+
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.syzlttut.authentication.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/viewConfirm"
+            app:destination="@id/confirmFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/confirmFragment"
+        android:name="com.example.syzlttut.authentication.ConfirmFragment"
+        android:label="fragment_confirm"
+        tools:layout="@layout/fragment_confirm" />
+
+</navigation>
